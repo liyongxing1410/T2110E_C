@@ -9,11 +9,13 @@
 
 float average (int arr[], int size) {
     int sum = 0;
+    int count = 0;
     float average = 0;
     for (int i = 0; i < size; i++) {
         sum += arr[i];
+        count++;
     }
-    average = (float)sum / size;
+    average = (float)sum / count;
     return  average;
 }
 
